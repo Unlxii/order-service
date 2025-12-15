@@ -1,10 +1,11 @@
-# Handout for Activity 2.2: Integration Testing of Order Service
+# Integration Testing of Order Service
 
 ## Objective
-Learn **Integration Testing** by practicing 3 common strategies:
-- **Top-down**
-- **Bottom-up**
-- **Sandwich (Hybrid)**
+- Learn **Integration Testing** by practicing 3 common strategies:
+ฝึกทำ Integration Testing 3 แบบ: Top-down, Bottom-up, Sandwich
+ฝึกเขียน Stub/Driver/Spy
+พิสูจน์ได้ว่าระบบตอบสนองถูกต้อง ไม่เกิดความผิดพลาด
+การทำให้เทสต์รันอัตโนมัติบน CI อย่างเป็นระบบ
 
 You will work with a small Order Service composed of multiple collaborating components.
 
