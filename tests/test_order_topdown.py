@@ -28,7 +28,7 @@ class SpyEmail(EmailService):
     def send(self, to, subject, body):
         self.sent.append((to, subject, body))
         
-
+#student_id 650612098
 @pytest.mark.topdown
 # Payment fails -> Stock must be rolled back
 def test_payment_decline_releases_stock():
@@ -39,7 +39,7 @@ def test_payment_decline_releases_stock():
     with pytest.raises(PaymentDeclinedError):
         svc.place_order("a@b.com", items, region="TH")
     assert inv.get_stock("SKU1") == 10
-
+#student_id 650612098
 @pytest.mark.topdown
 # Order Success -> Verify Email Subject and Body
 def test_order_success_check_email_content():
@@ -55,7 +55,7 @@ def test_order_success_check_email_content():
     to, subject, body = email_spy.sent[0]
     assert to == "user@test.com"
     assert "Order confirmed" in subject                
-    
+#student_id 650612098  
 @pytest.mark.topdown
 # System/Network crash during payment
 def test_system_error_handling():

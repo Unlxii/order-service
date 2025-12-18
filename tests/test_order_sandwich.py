@@ -9,6 +9,7 @@ class SpyEmail(EmailService):
     def __init__(self): self.calls = 0
     def send(self, to, subject, body): self.calls += 1
     
+#student_id 650612098    
 @pytest.mark.sandwich
 def test_order_success_with_real_payment():
     inv = InMemoryInventory()
@@ -17,7 +18,8 @@ def test_order_success_with_real_payment():
     items = [{"sku":"A","qty":1,"price":900.0,"weight":2.0}]
     res = svc.place_order("x@y.com", items, region="TH")
     assert inv.get_stock("A") == 1
-
+    
+#student_id 650612098
 @pytest.mark.sandwich
 # Sandwich: Test logic with different Region (US)
 def test_order_us_region_integration():
