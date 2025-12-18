@@ -54,7 +54,7 @@ def test_order_success_check_email_content():
     assert len(email_spy.sent) == 1
     to, subject, body = email_spy.sent[0]
     assert to == "user@test.com"
-    assert "Order Confirmed" in subject  
+    assert "Order confirmed" in subject  
     assert "SKU_A" in body               
     
 @pytest.mark.topdown
